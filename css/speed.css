@@ -1,0 +1,42 @@
+
+
+
+
+.card_container.speed {
+    background: linear-gradient(#316B83, #6D8299, #D5BFBF);
+    transition: .3s all linear;
+}
+
+.card_container.speed:hover {
+    transition: .4s all linear;
+}
+.card_container.speed:before {
+    background: linear-gradient(#D5BFBF, #6D8299, #316B83);
+}
+
+
+/* image */ 
+
+.card_container.speed .background {
+    background: url('../images/running_man.png') no-repeat top center;
+    background-size: 90%;
+    top: 1%;
+}
+
+/* box */ 
+.card_container.speed .box:before {
+    background: #D5BFBF;
+}
+.card_container.speed:hover .box:before {
+    background: #316B83;
+    opacity: 0.5;
+}
+
+
+/* content */
+
+/* content ---------  text*/
+
+.card_container.speed .box-content .box-content-list .text input {
+    color: #FF5DA2;
+}

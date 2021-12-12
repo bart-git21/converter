@@ -1,0 +1,32 @@
+
+
+
+
+.card_container.weight {
+    background: linear-gradient(#3d550c, #ecf87f);
+}
+.card_container.weight:before {
+    background: linear-gradient(#81b622, #3d550c);
+}
+
+
+/* image */ 
+
+.card_container.weight .background {
+    background: url('../images/weight_scale.png') no-repeat top right;
+    background-size: 75%;
+    top: 1%;
+    right: 5%;
+}
+
+/*box */ 
+.card_container.weight .box:before {
+    background: #81b622;
+}
+
+
+/* content ---------  text*/
+
+.card_container.weight .box-content .box-content-list .text input {
+    color: #A2D2FF;
+}

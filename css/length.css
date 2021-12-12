@@ -1,0 +1,42 @@
+
+
+
+
+.card_container.length {
+    background: linear-gradient(#2A0944, #A12568, #FEC260);
+}
+.card_container.length:before {
+    background: linear-gradient(#FEC260,#A12568, #2A0944);
+}
+
+
+/* image */ 
+
+.card_container.length .background {
+    background: url('../images/measure_tape.png') no-repeat top right;
+    background-size: 98%;
+    top: 1%;
+    right: 5%;
+}
+
+/*box */ 
+.card_container.length .box:before {
+    background: #FEC260;
+}
+.card_container.length:hover .box:before {
+    background: #A12568;
+    opacity: .5;
+}
+
+.card_container.length:hover .box-content h4 {
+    top: 10%;
+}
+.card_container.length:hover .box-content .box-content-list {
+    top: 20%;
+}
+
+/* content ---------  text*/
+
+.card_container.length .box-content .box-content-list .text input {
+    color: #EC9CD3;
+}

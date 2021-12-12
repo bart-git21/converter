@@ -1,0 +1,229 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #111;
+}
+
+section {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+
+.card_container {
+    position: relative;
+
+    --card_width: 380px;
+    width: var(--card_width);
+    height: 600px;
+    margin: 50px auto;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    transition: .3s all linear;
+}
+.card_container:hover {
+    width: calc(1.15 * var(--card_width));
+    height: 700px;
+}
+
+.card_container:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+
+    border-radius: 20px;
+}
+
+.card_container .background {
+    position: absolute;
+
+    width: 100%;
+    height: 90%;
+    top: -15%;
+    left: 0;
+    opacity: .15;
+
+    transition: .3s all linear;
+
+}
+.card_container:hover .background {
+    filter: blur(4px);
+}
+
+/* box */ 
+.box {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.6;
+    clip-path: circle(340px at 70% 10%);
+
+    transition: .3s all linear;
+}
+
+.box:hover:before {
+    clip-path: circle(130px at 80% 10%);    
+    opacity: 1;
+    transition: .45s all linear;
+}
+
+
+
+/* content */
+.card_container .box-content {
+    font-family: 'Readex Pro', sans-serif;
+
+    position: absolute;
+    top: 60%;
+
+    transition: .4s all linear;
+
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_container:hover .box-content {
+    top: 10%;
+}
+
+.card_container .box-content .h2 {
+    font-size: calc(0.12 * var(--card_width));
+    color: #eee;
+    margin-bottom: 10px;
+    line-height: 1.3;
+    text-align: center;
+    text-shadow: 2px 2px 0 brown;
+
+    transition: .4s all linear;
+    position: absolute;
+    top: 0;
+}
+.card_container:hover .box-content .h2 {
+    margin-bottom: 5px;
+    color: #eee;
+}
+
+ h4 {
+    font-size: 26px;
+    line-height: .9;
+    color: #eee;
+    margin-bottom: 10px;
+    width: 100%;
+
+    position: absolute;
+    top: 20%;
+    opacity: 0;
+
+    transition: .5s all linear;
+}
+
+.card_container:hover .box-content h4 {
+    top: 35%;
+    opacity: 1;
+}
+
+
+/* content ---------  text*/
+
+.card_container .box-content .box-content-list {
+    width: 100%;
+    font-size: 23px;
+    color: #eee;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: absolute;
+    top: 40%;
+    opacity: 0;
+
+    transition: .5s all linear;
+}
+.card_container:hover .box-content .box-content-list {
+    opacity: 1;
+    top: 45%;
+}
+
+.card_container .box-content .box-content-list .text {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    /* margin-bottom: 22px; */
+}
+
+.card_container .box-content .box-content-list .text span {
+    display: block;
+    width: 43%;
+    text-align: left;
+}
+
+.card_container .box-content .box-content-list .text input {
+    width: 53%;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    background: #000;
+
+    border-radius: 12px;
+    padding: 5px;
+
+    transition: .2s all linear;
+}
+.card_container .box-content .box-content-list .text input:hover {
+    width: 58%;
+    transition: .6s all linear;
+}
+
+.card_container .box-content .box-content-list hr {
+    color: #fff;
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 13px;
+}
