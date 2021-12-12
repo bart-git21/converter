@@ -190,12 +190,9 @@ section {
 }
 
 .card_container .box-content .box-content-list .text {
-
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
-    /* margin-bottom: 22px; */
 }
 
 .card_container .box-content .box-content-list .text span {
