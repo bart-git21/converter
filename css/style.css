@@ -67,6 +67,7 @@ section {
     top: -15%;
     left: 0;
     opacity: .15;
+    filter: blur(2px);
 
     transition: .3s all linear;
 
